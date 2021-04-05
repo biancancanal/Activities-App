@@ -7,5 +7,7 @@ function newActivity() {
     .then(res => res.json())
     .then(data => {
         console.log(data)
+        let p = document.getElementById("new activity")
+        p.innerHTML = data.activity
     })
 }
