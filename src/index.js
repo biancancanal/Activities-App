@@ -23,15 +23,17 @@ function saveActivity(e) {
 
     let removeButton = document.createElement("BUTTON");
     removeButton.innerHTML = "x"
-    li.appendChild(removeButton)
+    li.appendChild(removeButton).addEventListener("click", () => {
+        saved.removeChild(li);
+    })
 
     newActivity()
 }
 
 
-function removeActivity() {
-    // if "x" is clicked, remove item
-}
+// function removeActivity() {
+//     if ()
+// }
 
 
 
