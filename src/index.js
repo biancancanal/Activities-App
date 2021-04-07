@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   newActivity()  
   document.getElementById("heart").addEventListener("click", saveActivity)
   document.getElementById("refresh").addEventListener("click", newActivity)
+  document.getElementById("delete").addEventListener("click", removeActivity)
 })
 
 function newActivity() {
@@ -24,7 +25,9 @@ function saveActivity(e) {
 }
 
 
+function removeActivity() {
 
+}
 
 
 
