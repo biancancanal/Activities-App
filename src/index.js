@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   newActivity()  
   document.getElementById("heart").addEventListener("click", saveActivity)
   document.getElementById("refresh").addEventListener("click", newActivity)
-  document.getElementById("delete").addEventListener("click", removeActivity)
 })
 
 function newActivity() {
@@ -21,12 +20,17 @@ function saveActivity(e) {
     let li = document.createElement('li');
     li.innerHTML = document.getElementById("new-activity").innerHTML
     saved.appendChild(li)
+
+    let removeButton = document.createElement("BUTTON");
+    removeButton.innerHTML = "x"
+    li.appendChild(removeButton)
+
     newActivity()
 }
 
 
 function removeActivity() {
-
+    // if "x" is clicked, remove item
 }
 
 
