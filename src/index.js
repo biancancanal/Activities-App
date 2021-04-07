@@ -19,6 +19,7 @@ function saveActivity(e) {
     let li = document.createElement('li');
     li.innerHTML = document.getElementById("new-activity").innerHTML
     saved.appendChild(li)
+    newActivity()
 }
 
 
