@@ -12,6 +12,10 @@ function newActivity() {
 }
 
 
+function saveActivity(e) {
+    console.log(e)
+}
+
 
 
 
