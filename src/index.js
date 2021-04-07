@@ -14,7 +14,11 @@ function newActivity() {
 
 
 function saveActivity(e) {
-    console.log(e)
+    console.log(e.target)
+    let saved = document.getElementById("saved-list")
+    let li = document.createElement('li');
+    li.innerHTML = document.getElementById("new-activity").innerHTML
+    saved.appendChild(li)
 }
 
 
