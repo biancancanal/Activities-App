@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   newActivity()  
   document.getElementById("heart").addEventListener("click", saveActivity)
+  document.getElementById("refresh").addEventListener("click", newActivity)
 })
 
 function newActivity() {
