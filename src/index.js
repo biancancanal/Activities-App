@@ -31,12 +31,6 @@ function saveActivity(e) {
 }
 
 
-// function removeActivity() {
-//     if ()
-// }
-
-
-
 
 
 
